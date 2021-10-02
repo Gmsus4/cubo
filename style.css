@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    /* background-color: saddlebrown; */
+    padding: 60px;
+    position: relative;
+}
+
+.fas{
+    position: absolute;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.fa-caret-left{
+    font-size: 110px;
+    left: 0;
+    bottom: 255px;
+}
+
+.fa-caret-right{
+    font-size: 110px;
+    right: 0;
+    bottom: 255px;
+}
+
+.fa-sort-up{
+    font-size: 110px;
+    top: -5px;
+    left: 275px;
+}
+
+.fa-sort-down{
+    font-size: 110px;
+    bottom: -5px;
+    left: 275px;
+}
+
+.fa-undo{
+    font-size: 45px;
+    top: 130px;
+    left: 122px;
+}
+
+.fa-home{
+    font-size: 60px;
+    top: 280px;
+    left: 276px;
+}
+
+.cubo{
+    width: 500px;
+    height: 500px;
+    background-color: #e5e5e5;
+    padding: 12px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 12px;
+}
+
+.cubo div{
+    border-radius: 10px;
+}
+.cubo .f{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cubo .r{
+    background-color: #00bbf9;
+}
+
+.cubo .l{
+    background-color: #0ead69;
+}
+
+.cubo .u{
+    background-color: #fe7f2d;
+}
+
+.cubo .d{
+    background-color: #ef233c;
+}
+
+.cubo .b{
+    background-color: #ffd166;
+}
+
+@media (max-width: 630px){
+    .cubo{
+        width: 250px;
+        height: 250px;
+    }
+    .fa-caret-left{
+        font-size: 55px;
+        left: 30px;
+        bottom: 155px;
+    }
+    
+    .fa-caret-right{
+        font-size: 55px;
+        right: 30px;
+        bottom: 155px;
+    }
+    
+    .fa-sort-up{
+        font-size: 55px;
+        top: 28px;
+        left: 167px;
+    }
+    
+    .fa-sort-down{
+        font-size: 55px;
+        bottom: 28px;
+        left: 167px;
+    }
+    
+    .fa-undo{
+        font-size: 23px;
+        top: 94px;
+        left: 90px;
+    }
+    
+    .fa-home{
+        font-size: 30px;
+        top: 170px;
+        left: 167px;
+    }
+}
+
+@media (max-width: 390px){
+    .cubo{
+        width: 200px;
+        height: 200px;
+    }
+    .fa-caret-left{
+        font-size: 55px;
+        left: 30px;
+        bottom: 131px;
+    }
+    
+    .fa-caret-right{
+        font-size: 55px;
+        right: 30px;
+        bottom: 131px;
+    }
+    
+    .fa-sort-up{
+        font-size: 55px;
+        top: 28px;
+        left: 142px;
+    }
+    
+    .fa-sort-down{
+        font-size: 55px;
+        bottom: 28px;
+        left: 142px;
+    }
+    
+    .fa-undo{
+        font-size: 23px;
+        top: 86px;
+        left: 83px;
+    }
+    
+    .fa-home{
+        font-size: 30px;
+        top: 145px;
+        left: 142px;
+    }
+}
